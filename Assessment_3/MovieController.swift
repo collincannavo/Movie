@@ -81,13 +81,6 @@ class MovieController {
         dataTask.resume()
     }
     
-    func finishFetchingPoster() {
-        
-        let google = URL(fileURLWithPath: "www.google.com")
-        let name = String(contentsOf: google, usedEncoding: &<#T##String.Encoding#>)
-        
-        
-    }
     
 }
 
