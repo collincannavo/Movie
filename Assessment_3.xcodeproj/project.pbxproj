@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B60F3B571EF42B110033AAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3B561EF42B110033AAAE /* AppDelegate.swift */; };
-		B60F3B591EF42B110033AAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3B581EF42B110033AAAE /* ViewController.swift */; };
 		B60F3B5C1EF42B110033AAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60F3B5A1EF42B110033AAAE /* Main.storyboard */; };
 		B60F3B5E1EF42B110033AAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60F3B5D1EF42B110033AAAE /* Assets.xcassets */; };
 		B60F3B611EF42B110033AAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60F3B5F1EF42B110033AAAE /* LaunchScreen.storyboard */; };
+		B60F3B691EF42B7E0033AAAE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3B681EF42B7E0033AAAE /* Movie.swift */; };
+		B60F3B6B1EF42E950033AAAE /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3B6A1EF42E950033AAAE /* MovieController.swift */; };
+		B60F3B6D1EF434060033AAAE /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3B6C1EF434060033AAAE /* MovieListTableViewController.swift */; };
+		B60F3B701EF436C80033AAAE /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60F3B6F1EF436C80033AAAE /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B60F3B531EF42B110033AAAE /* Assessment_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60F3B561EF42B110033AAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B60F3B581EF42B110033AAAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B60F3B5B1EF42B110033AAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B60F3B5D1EF42B110033AAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B60F3B601EF42B110033AAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B60F3B621EF42B110033AAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60F3B681EF42B7E0033AAAE /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B60F3B6A1EF42E950033AAAE /* MovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		B60F3B6C1EF434060033AAAE /* MovieListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		B60F3B6F1EF436C80033AAAE /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,65 @@
 		B60F3B551EF42B110033AAAE /* Assessment_3 */ = {
 			isa = PBXGroup;
 			children = (
-				B60F3B561EF42B110033AAAE /* AppDelegate.swift */,
-				B60F3B581EF42B110033AAAE /* ViewController.swift */,
-				B60F3B5A1EF42B110033AAAE /* Main.storyboard */,
-				B60F3B5D1EF42B110033AAAE /* Assets.xcassets */,
-				B60F3B5F1EF42B110033AAAE /* LaunchScreen.storyboard */,
-				B60F3B621EF42B110033AAAE /* Info.plist */,
+				B60F3B731EF437CE0033AAAE /* Model */,
+				B60F3B721EF437C50033AAAE /* View Controller */,
+				B60F3B711EF437BF0033AAAE /* View */,
+				B60F3B6E1EF4340B0033AAAE /* View Controller */,
+				B6EA0D201F0D812C004A3A64 /* Resources */,
+				B6EA0D211F0D8132004A3A64 /* Storyboards */,
 			);
 			path = Assessment_3;
+			sourceTree = "<group>";
+		};
+		B60F3B6E1EF4340B0033AAAE /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3B6C1EF434060033AAAE /* MovieListTableViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		B60F3B711EF437BF0033AAAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3B6F1EF436C80033AAAE /* MovieTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B60F3B721EF437C50033AAAE /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3B6A1EF42E950033AAAE /* MovieController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		B60F3B731EF437CE0033AAAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3B681EF42B7E0033AAAE /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6EA0D201F0D812C004A3A64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3B561EF42B110033AAAE /* AppDelegate.swift */,
+				B60F3B5D1EF42B110033AAAE /* Assets.xcassets */,
+				B60F3B621EF42B110033AAAE /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B6EA0D211F0D8132004A3A64 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B60F3B5A1EF42B110033AAAE /* Main.storyboard */,
+				B60F3B5F1EF42B110033AAAE /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60F3B591EF42B110033AAAE /* ViewController.swift in Sources */,
+				B60F3B701EF436C80033AAAE /* MovieTableViewCell.swift in Sources */,
+				B60F3B6D1EF434060033AAAE /* MovieListTableViewController.swift in Sources */,
+				B60F3B6B1EF42E950033AAAE /* MovieController.swift in Sources */,
+				B60F3B691EF42B7E0033AAAE /* Movie.swift in Sources */,
 				B60F3B571EF42B110033AAAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +364,7 @@
 				B60F3B671EF42B110033AAAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
